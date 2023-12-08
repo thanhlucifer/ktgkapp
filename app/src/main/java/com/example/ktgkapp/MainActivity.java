@@ -20,8 +20,11 @@ public class MainActivity extends AppCompatActivity {
         products.add(new Product(R.drawable.product3, "Rượu nho", "$15.99"));
         products.add(new Product(R.drawable.product4, "Rượu nho siêu cấp", "$30.99"));
         products.add(new Product(R.drawable.product5, "Chanh muối", "$25.99"));
-
-
+        products.add(new Product(R.drawable.product6, "Cà phê", "$10.99"));
+        products.add(new Product(R.drawable.product7, "Bia", "$11.99"));
+        products.add(new Product(R.drawable.product8, "Cà phê muối", "$15.99"));
+        products.add(new Product(R.drawable.product9, "Sữa bò tươi", "$25.99"));
+        products.add(new Product(R.drawable.product10, "Black lable", "$25.99"));
         ProductAdapter adapter = new ProductAdapter(this, products);
 
         ListView listView = findViewById(R.id.productListView);
