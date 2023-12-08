@@ -31,5 +31,24 @@
         android:text="Price: $0.00"
         android:textSize="16sp" />
 
+    <Button
+        android:id="@+id/buyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailPriceTextView"
+        android:layout_marginTop="16dp"
+        android:text="Buy"
+        android:onClick="onBuyButtonClick" />
+
+    <TextView
+        android:id="@+id/totalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buyButton"
+        android:layout_marginTop="16dp"
+        android:text="Total: $0.00"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
     <!-- Thêm các chi tiết sản phẩm khác vào đây -->
 </RelativeLayout>
