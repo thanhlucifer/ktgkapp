@@ -5,12 +5,16 @@
     android:layout_height="match_parent"
     tools:context=".ProductDetailActivity">
 
+
+
     <ImageView
         android:id="@+id/detailImageView"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_launcher_foreground" />
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_centerHorizontal="true" />
+
 
     <TextView
         android:id="@+id/detailNameTextView"
@@ -20,7 +24,8 @@
         android:layout_marginTop="16dp"
         android:text="Product Name"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:id="@+id/detailPriceTextView"
@@ -29,16 +34,8 @@
         android:layout_below="@id/detailNameTextView"
         android:layout_marginTop="8dp"
         android:text="Price: $0.00"
-        android:textSize="16sp" />
-
-    <Button
-        android:id="@+id/buyButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/detailPriceTextView"
-        android:layout_marginTop="16dp"
-        android:text="Buy"
-        android:onClick="onBuyButtonClick" />
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:id="@+id/totalTextView"
@@ -48,7 +45,19 @@
         android:layout_marginTop="16dp"
         android:text="Total: $0.00"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/buyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailPriceTextView"
+        android:layout_marginTop="16dp"
+        android:text="Buy"
+        android:onClick="onBuyButtonClick"
+        android:layout_centerHorizontal="true"/>
+
+
 
     <!-- Thêm các chi tiết sản phẩm khác vào đây -->
 </RelativeLayout>
